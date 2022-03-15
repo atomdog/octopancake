@@ -29,16 +29,7 @@ def recog(audiolist):
     try:
         q = (r.recognize_google(audiolist.pop(0)))
         textlist.append(q)
-        if(q=="48 Ashford"):
-            speaking("12 on tha way to 48 Ashford")
-        if(q=="hello"):
-            print('got hi')
-            speaking("hello")
-            tts = True
-            word = "Hello"
-        if(q=="goodbye"):
-            print("got see you")
-            speaking("All systems shutting down")
+   
             sys.exit()
 
 
